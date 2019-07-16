@@ -284,9 +284,9 @@ chat:
 # ---------------------------------------------------------------
 
 # Automatically scroll page to section which is under <!-- more --> mark.
-scroll_to_more: true        #如果文章有摘要,会自动滚动到摘要下面
+scroll_to_more: false        #如果文章有摘要,会自动滚动到摘要下面
 save_scroll: true           #通过cookies来缓存阅读进度
-excerpt_description: true   #自动摘录描述作为序言
+excerpt_description: false   #自动摘录描述作为序言
 auto_excerpt:               #设置阅读全文
   enable: true
   length: 150               #摘要次数
@@ -308,8 +308,8 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
-    another_day: true
+    enable: false
+    another_day: false
   categories: true
 
 # Post wordcount display settings
