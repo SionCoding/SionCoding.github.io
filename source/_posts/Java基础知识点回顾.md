@@ -1,7 +1,8 @@
 title: Java基础知识点回顾
 author: Sion
 tags:
-  - Java
+  - JavaSE
+  - ''
 categories:
   - 技术
 date: 2019-07-16 10:03:00

@@ -1,7 +1,10 @@
 title: Java集合总结
 author: Sion
-date: 2019-07-20 14:42:34
 tags:
+  - JavaSE
+categories:
+  - 技术
+date: 2019-07-20 14:42:00
 ---
 ### 集合框架：
 ##### Java中的集合大致可分为`Collection`和`Map`；两者的区别：
