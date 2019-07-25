@@ -47,21 +47,13 @@ class User {
 Java中属于基本类型的有：int、short、long、char、boolean、float、double、byte
 1. `String`是特殊的引用类型且是`final`的，JVM使用字符串常量池存储字符串数据。创建新的字符串，JVM会先去查找常量池中是否有该字符串，如果有，直接返回该字符串在常量池中的引用，如果没有，则添加到常量池。
 2. `String s = "a"; s += "b";`，这段代码执行前后，字符串常量池中将出现a和ab两个字符串常量，而原本s变量的引用指向了常量池中ab。
+3. `String s = new String("ab")`，这段代码一共创建了几个对象？一个或两个。如果字符串常量池中有了`ab`这个字符串(比如在此之前已经使用了`String str = "ab"`)，那么新的s对象引用其实仅仅是指向了字符串常量中的ab，并没有创建新的字符串对象。但是，每次调用`new`都会在堆内存开辟空间，创建一个String对象，这是肯定的。
 
+#### String和StringBuffer和StringBuilder关系
+1. String是不可变字符串，StringBuilder和StringBuffer是可变字符串，如果经常改变字符串的原始数据，最好使用StringBuffer代替。
+2. StringBuffer是线程安全的，效率低，StringBuffer是非线程安全的，效率高。
+3. String重写了`equals（）`方法和`hashCode（）`方法；而StringBuilder没有重写`equals（）`方法，使用`new StringBuffer("")`会直接在堆内存中开辟空间储存对象。因此将`StringBuffer`对象储存仅Java集合中可能会出现问题。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### static关键字
+1. static方法只能访问static变量或方法
+2. 非static标记的方法可以访问static或非static方法或变量
