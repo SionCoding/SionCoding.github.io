@@ -6,6 +6,8 @@
     "version": "3.9.0"
   },
   "dependencies": {
+    "audit": "0.0.6",
+    "fix": "0.0.6",
     "hexo": "^3.9.0",
     "hexo-admin": "^2.3.0",
     "hexo-deployer-git": "^1.0.0",
