@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "audit": "0.0.6",
+    "canvas-nest.js": "^2.0.4",
     "fix": "0.0.6",
     "hexo": "^3.9.0",
     "hexo-admin": "^2.3.0",
