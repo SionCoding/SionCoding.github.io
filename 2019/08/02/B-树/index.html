@@ -95,13 +95,18 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="SionBlogs">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+  <meta name="description" content="B+树与二叉搜索树、二叉平衡树区别： 使用多叉而不是二叉了 每个节点不是只存储一个key了，可以存储多个key 非叶子节点只存储key，叶子结点存储key和数据 叶子节点两两相连为顺序查询提供帮助">
+<meta name="keywords" content="数据结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="B+树">
+<meta property="og:url" content="http://yoursite.com/2019/08/02/B-树/index.html">
 <meta property="og:site_name" content="SionBlogs">
+<meta property="og:description" content="B+树与二叉搜索树、二叉平衡树区别： 使用多叉而不是二叉了 每个节点不是只存储一个key了，可以存储多个key 非叶子节点只存储key，叶子结点存储key和数据 叶子节点两两相连为顺序查询提供帮助">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-02T02:10:50.251Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SionBlogs">
+<meta name="twitter:title" content="B+树">
+<meta name="twitter:description" content="B+树与二叉搜索树、二叉平衡树区别： 使用多叉而不是二叉了 每个节点不是只存储一个key了，可以存储多个key 非叶子节点只存储key，叶子结点存储key和数据 叶子节点两两相连为顺序查询提供帮助">
 
 
 
@@ -109,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/archives/2019/07/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/02/B-树/">
 
 
 
@@ -119,7 +124,7 @@
   };
 </script>
 
-  <title>Archive | SionBlogs</title>
+  <title>B+树 | SionBlogs</title>
   
 
 
@@ -167,7 +172,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -253,7 +258,7 @@
         
         
           
-          <li class="menu-item menu-item-archives menu-item-active">
+          <li class="menu-item menu-item-archives">
 
     
     
@@ -306,244 +311,233 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/02/B-树/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Sion">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SionBlogs">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">B+树
+
+              
+            
+          </h1>
         
+
+        <div class="post-meta">
+
           
-        
-        Um..! 6 posts in total. Keep on posting.
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
+          
 
-        
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+              
+                
+              
 
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/28/计算机网络总结/" itemprop="url">
+              <time title="Created: 2019-08-02 09:55:00" itemprop="dateCreated datePublished" datetime="2019-08-02T09:55:00+08:00">2019-08-02</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/技术/" itemprop="url" rel="index"><span itemprop="name">技术</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
             
-              <span itemprop="name">计算机网络总结</span>
             
-          </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-28T15:17:00+08:00" content="2019-07-28">
-          07-28
-        </time>
-      </div>
+          
+          
 
-    </header>
-  </article>
+          
 
+          
 
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Symbols count in article: </span>
+              
+              <span title="Symbols count in article">259</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Reading time &asymp;</span>
+              
+              <span title="Reading time">1 mins.</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/27/Mybatis传入参数/" itemprop="url">
-            
-              <span itemprop="name">MyBatis传入参数</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-27T14:41:00+08:00" content="2019-07-27">
-          07-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <h3 id="B-树与二叉搜索树、二叉平衡树区别："><a href="#B-树与二叉搜索树、二叉平衡树区别：" class="headerlink" title="B+树与二叉搜索树、二叉平衡树区别："></a>B+树与二叉搜索树、二叉平衡树区别：</h3><ol>
+<li>使用多叉而不是二叉了</li>
+<li>每个节点不是只存储一个key了，可以存储多个key</li>
+<li>非叶子节点只存储key，叶子结点存储key和数据</li>
+<li>叶子节点两两相连为顺序查询提供帮助</li>
+</ol>
+<a id="more"></a>
 
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/20/Java集合/" itemprop="url">
-            
-              <span itemprop="name">Java集合总结</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-20T14:42:00+08:00" content="2019-07-20">
-          07-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<h3 id="MySQL为什么选择B-树"><a href="#MySQL为什么选择B-树" class="headerlink" title="MySQL为什么选择B+树"></a>MySQL为什么选择B+树</h3><ol>
+<li>B+树的非叶子节点只存储key，占用空间非常小，每一层能索引到的数据范围非常广，即每次IO操作可以观看更多的数据</li>
+<li>叶子节点两两相连，符合磁盘的预读特性</li>
+<li>支持范围查询，并且范围查询非常高效，因为数据都存储在叶子节点且叶子结点两两相连，并且有指针指向其他叶子结点，范围查询无需整棵树遍历</li>
+</ol>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/16/Java基础知识点回顾/" itemprop="url">
-            
-              <span itemprop="name">Java基础知识点回顾</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-16T10:03:00+08:00" content="2019-07-16">
-          07-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/07/16/hello-world/" itemprop="url">
-            
-              <span itemprop="name">Hello World</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-16T09:37:00+08:00" content="2019-07-16">
-          07-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+
+    
+
+    
+      
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/数据结构/" rel="tag"><i class="fa fa-tag"></i> 数据结构</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/28/计算机网络总结/" rel="next" title="计算机网络总结">
+                <i class="fa fa-chevron-left"></i> 计算机网络总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -563,8 +557,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -674,6 +677,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#B-树与二叉搜索树、二叉平衡树区别："><span class="nav-number">1.</span> <span class="nav-text">B+树与二叉搜索树、二叉平衡树区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL为什么选择B-树"><span class="nav-number">2.</span> <span class="nav-text">MySQL为什么选择B+树</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -819,6 +839,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -835,6 +859,8 @@
 
   
 
+
+  
 
 
   
