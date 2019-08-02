@@ -103,7 +103,7 @@
 <meta property="og:site_name" content="SionBlogs">
 <meta property="og:description" content="Java基础JDK和JRE区别 jre即Java Runtime Environment，Java运行环境。包括Java虚拟机和Java类库 jdk是Java开发工具包，例如：tools.jar">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-27T08:43:35.000Z">
+<meta property="og:updated_time" content="2019-08-02T02:16:03.143Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础知识点回顾">
 <meta name="twitter:description" content="Java基础JDK和JRE区别 jre即Java Runtime Environment，Java运行环境。包括Java虚拟机和Java类库 jdk是Java开发工具包，例如：tools.jar">
@@ -449,17 +449,17 @@
       
 
       
-        <h3 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h3><h4 id="JDK和JRE区别"><a href="#JDK和JRE区别" class="headerlink" title="JDK和JRE区别"></a>JDK和JRE区别</h4><ol>
+        <h2 id="Java基础"><a href="#Java基础" class="headerlink" title="Java基础"></a>Java基础</h2><h3 id="JDK和JRE区别"><a href="#JDK和JRE区别" class="headerlink" title="JDK和JRE区别"></a>JDK和JRE区别</h3><ol>
 <li><code>jre</code>即Java Runtime Environment，Java运行环境。包括Java虚拟机和Java类库</li>
 <li><code>jdk</code>是Java开发工具包，例如：<code>tools.jar</code></li>
 </ol>
 <a id="more"></a>
 
-<h4 id="和-equals-区别"><a href="#和-equals-区别" class="headerlink" title="== 和 equals 区别"></a>== 和 equals 区别</h4><ol>
+<h3 id="和-equals-区别"><a href="#和-equals-区别" class="headerlink" title="== 和 equals 区别"></a>== 和 equals 区别</h3><ol>
 <li><code>==</code>是一个比较运算符，对于基本类型，比较的是具体的数值(int、double..)；对于引用类型，比较的是对象的内存地址</li>
 <li><code>equals</code>是超类<code>Object</code>就具有的方法，因此所有的引用类型都具有这个方法，只用用来比较引用数据类型。<code>equals</code>方法默认比较的对象内存地址，如果重写该方法，一般比较的是对象的属性值</li>
 </ol>
-<h4 id="final的作用"><a href="#final的作用" class="headerlink" title="final的作用"></a>final的作用</h4><p>可修饰类，类属性，类方法。</p>
+<h3 id="final的作用"><a href="#final的作用" class="headerlink" title="final的作用"></a>final的作用</h3><p>可修饰类，类属性，类方法。</p>
 <ol>
 <li>被<code>final</code>修饰的类不能被继承</li>
 <li><code>final</code>修饰的类属性可以是基本类型也可以是引用类型，如果是基本类型就不能再被赋值，如果是引用类型，则不能再指向其他引用地址，但对象本身是可以被改变的。</li>
@@ -469,18 +469,18 @@
 <ol start="3">
 <li>类中所有<code>private</code>方法都是隐式地定义为final，为private方法添加final多此一举</li>
 </ol>
-<h4 id="String属于基本类型吗"><a href="#String属于基本类型吗" class="headerlink" title="String属于基本类型吗"></a>String属于基本类型吗</h4><h5 id="不，String属于特殊的引用类型"><a href="#不，String属于特殊的引用类型" class="headerlink" title="不，String属于特殊的引用类型"></a>不，String属于特殊的引用类型</h5><p>Java中属于基本类型的有：int、short、long、char、boolean、float、double、byte</p>
+<h3 id="String属于基本类型吗"><a href="#String属于基本类型吗" class="headerlink" title="String属于基本类型吗"></a>String属于基本类型吗</h3><h4 id="不，String属于特殊的引用类型"><a href="#不，String属于特殊的引用类型" class="headerlink" title="不，String属于特殊的引用类型"></a>不，String属于特殊的引用类型</h4><p>Java中属于基本类型的有：int、short、long、char、boolean、float、double、byte</p>
 <ol>
 <li><code>String</code>是特殊的引用类型且是<code>final</code>的，JVM使用字符串常量池存储字符串数据。创建新的字符串，JVM会先去查找常量池中是否有该字符串，如果有，直接返回该字符串在常量池中的引用，如果没有，则添加到常量池。</li>
 <li><code>String s = &quot;a&quot;; s += &quot;b&quot;;</code>，这段代码执行前后，字符串常量池中将出现a和ab两个字符串常量，而原本s变量的引用指向了常量池中ab。</li>
 <li><code>String s = new String(&quot;ab&quot;)</code>，这段代码一共创建了几个对象？一个或两个。如果字符串常量池中有了<code>ab</code>这个字符串(比如在此之前已经使用了<code>String str = &quot;ab&quot;</code>)，那么新的s对象引用其实仅仅是指向了字符串常量中的ab，并没有创建新的字符串对象。但是，每次调用<code>new</code>都会在堆内存开辟空间，创建一个String对象，这是肯定的。</li>
 </ol>
-<h4 id="String和StringBuffer和StringBuilder关系"><a href="#String和StringBuffer和StringBuilder关系" class="headerlink" title="String和StringBuffer和StringBuilder关系"></a>String和StringBuffer和StringBuilder关系</h4><ol>
+<h3 id="String和StringBuffer和StringBuilder关系"><a href="#String和StringBuffer和StringBuilder关系" class="headerlink" title="String和StringBuffer和StringBuilder关系"></a>String和StringBuffer和StringBuilder关系</h3><ol>
 <li>String是不可变字符串，StringBuilder和StringBuffer是可变字符串，如果经常改变字符串的原始数据，最好使用StringBuffer代替。</li>
 <li>StringBuffer是线程安全的，效率低，StringBuffer是非线程安全的，效率高。</li>
 <li>String重写了<code>equals（）</code>方法和<code>hashCode（）</code>方法；而StringBuilder没有重写<code>equals（）</code>方法，使用<code>new StringBuffer(&quot;&quot;)</code>会直接在堆内存中开辟空间储存对象。因此将<code>StringBuffer</code>对象储存仅Java集合中可能会出现问题。</li>
 </ol>
-<h4 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h4><ol>
+<h3 id="static关键字"><a href="#static关键字" class="headerlink" title="static关键字"></a>static关键字</h3><ol>
 <li>static方法只能访问static变量或方法</li>
 <li>非static标记的方法可以访问static或非static方法或变量</li>
 </ol>
@@ -714,7 +714,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Java基础"><span class="nav-number">1.</span> <span class="nav-text">Java基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#JDK和JRE区别"><span class="nav-number">1.1.</span> <span class="nav-text">JDK和JRE区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#和-equals-区别"><span class="nav-number">1.2.</span> <span class="nav-text">== 和 equals 区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#final的作用"><span class="nav-number">1.3.</span> <span class="nav-text">final的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String属于基本类型吗"><span class="nav-number">1.4.</span> <span class="nav-text">String属于基本类型吗</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#不，String属于特殊的引用类型"><span class="nav-number">1.4.1.</span> <span class="nav-text">不，String属于特殊的引用类型</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String和StringBuffer和StringBuilder关系"><span class="nav-number">1.5.</span> <span class="nav-text">String和StringBuffer和StringBuilder关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#static关键字"><span class="nav-number">1.6.</span> <span class="nav-text">static关键字</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java基础"><span class="nav-number">1.</span> <span class="nav-text">Java基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JDK和JRE区别"><span class="nav-number">1.1.</span> <span class="nav-text">JDK和JRE区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#和-equals-区别"><span class="nav-number">1.2.</span> <span class="nav-text">== 和 equals 区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#final的作用"><span class="nav-number">1.3.</span> <span class="nav-text">final的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String属于基本类型吗"><span class="nav-number">1.4.</span> <span class="nav-text">String属于基本类型吗</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#不，String属于特殊的引用类型"><span class="nav-number">1.4.1.</span> <span class="nav-text">不，String属于特殊的引用类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String和StringBuffer和StringBuilder关系"><span class="nav-number">1.5.</span> <span class="nav-text">String和StringBuffer和StringBuilder关系</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static关键字"><span class="nav-number">1.6.</span> <span class="nav-text">static关键字</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -749,7 +749,7 @@
     
       <span class="post-meta-item-text">Symbols count total: </span>
     
-    <span title="Symbols count total">26k</span>
+    <span title="Symbols count total">27k</span>
   
 
   
