@@ -95,18 +95,17 @@
 
 
 
-  <meta name="description" content="传入参数不只一个可以不使用parameterType同时在对应接口的参数中加上@Param(&amp;quot;&amp;quot;)即可 例子： 1public AddrInfo getAddrInfo(@Param(&quot;corpId&quot;)int corpId, @Param(&quot;addrId&quot;)int addrId);">
-<meta name="keywords" content="MyBatis">
+  <meta name="description" content="1. 进程和线程是什么1.1. 什么是进程进程是程序的一次执行过程，是系统运行程序的基本单位。 1.2. 什么是线程线程是比进程更小的执行单位，一个进程在其执行过程中可以产生多个线程，与进程不同的是同类的多个线程共享堆和方法区资源，但每个线程有自己的程序计数器、虚拟机栈和本地方法栈，所以系统在产生一个线程，或在各个线程之间切换工作时，负担要比进程小的多。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MyBatis传入参数">
-<meta property="og:url" content="http://yoursite.com/2019/07/27/Mybatis传入参数/index.html">
+<meta property="og:title" content="Java并发总结">
+<meta property="og:url" content="http://yoursite.com/2019/08/05/Java并发总结/index.html">
 <meta property="og:site_name" content="SionBlogs">
-<meta property="og:description" content="传入参数不只一个可以不使用parameterType同时在对应接口的参数中加上@Param(&amp;quot;&amp;quot;)即可 例子： 1public AddrInfo getAddrInfo(@Param(&quot;corpId&quot;)int corpId, @Param(&quot;addrId&quot;)int addrId);">
+<meta property="og:description" content="1. 进程和线程是什么1.1. 什么是进程进程是程序的一次执行过程，是系统运行程序的基本单位。 1.2. 什么是线程线程是比进程更小的执行单位，一个进程在其执行过程中可以产生多个线程，与进程不同的是同类的多个线程共享堆和方法区资源，但每个线程有自己的程序计数器、虚拟机栈和本地方法栈，所以系统在产生一个线程，或在各个线程之间切换工作时，负担要比进程小的多。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-07-27T08:43:35.000Z">
+<meta property="og:updated_time" content="2019-08-05T14:14:15.614Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MyBatis传入参数">
-<meta name="twitter:description" content="传入参数不只一个可以不使用parameterType同时在对应接口的参数中加上@Param(&amp;quot;&amp;quot;)即可 例子： 1public AddrInfo getAddrInfo(@Param(&quot;corpId&quot;)int corpId, @Param(&quot;addrId&quot;)int addrId);">
+<meta name="twitter:title" content="Java并发总结">
+<meta name="twitter:description" content="1. 进程和线程是什么1.1. 什么是进程进程是程序的一次执行过程，是系统运行程序的基本单位。 1.2. 什么是线程线程是比进程更小的执行单位，一个进程在其执行过程中可以产生多个线程，与进程不同的是同类的多个线程共享堆和方法区资源，但每个线程有自己的程序计数器、虚拟机栈和本地方法栈，所以系统在产生一个线程，或在各个线程之间切换工作时，负担要比进程小的多。">
 
 
 
@@ -114,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/27/Mybatis传入参数/">
+  <link rel="canonical" href="http://yoursite.com/2019/08/05/Java并发总结/">
 
 
 
@@ -124,7 +123,7 @@
   };
 </script>
 
-  <title>MyBatis传入参数 | SionBlogs</title>
+  <title>Java并发总结 | SionBlogs</title>
   
 
 
@@ -331,7 +330,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/27/Mybatis传入参数/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/05/Java并发总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sion">
@@ -348,7 +347,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">MyBatis传入参数
+          <h1 class="post-title" itemprop="name headline">Java并发总结
 
               
             
@@ -374,7 +373,7 @@
                 
               
 
-              <time title="Created: 2019-07-27 14:41:00" itemprop="dateCreated datePublished" datetime="2019-07-27T14:41:00+08:00">2019-07-27</time>
+              <time title="Created: 2019-08-05 17:18:43" itemprop="dateCreated datePublished" datetime="2019-08-05T17:18:43+08:00">2019-08-05</time>
             </span>
           
 
@@ -403,7 +402,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span title="Symbols count in article">345</span>
+              <span title="Symbols count in article">778</span>
             </span>
           
 
@@ -434,14 +433,27 @@
       
 
       
-        <h4 id="传入参数不只一个"><a href="#传入参数不只一个" class="headerlink" title="传入参数不只一个"></a>传入参数不只一个</h4><p>可以不使用<code>parameterType</code>同时在对应接口的参数中加上<code>@Param(&quot;&quot;)</code>即可</p>
-<p>例子：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> AddrInfo <span class="title">getAddrInfo</span><span class="params">(@Param(<span class="string">"corpId"</span>)</span><span class="keyword">int</span> corpId, @<span class="title">Param</span><span class="params">(<span class="string">"addrId"</span>)</span><span class="keyword">int</span> addrId)</span>;</span><br></pre></td></tr></table></figure>
-
+        <h3 id="1-进程和线程是什么"><a href="#1-进程和线程是什么" class="headerlink" title="1. 进程和线程是什么"></a>1. 进程和线程是什么</h3><h4 id="1-1-什么是进程"><a href="#1-1-什么是进程" class="headerlink" title="1.1. 什么是进程"></a>1.1. 什么是进程</h4><p>进程是程序的一次执行过程，是系统运行程序的基本单位。</p>
+<h4 id="1-2-什么是线程"><a href="#1-2-什么是线程" class="headerlink" title="1.2. 什么是线程"></a>1.2. 什么是线程</h4><p>线程是比进程更小的执行单位，一个进程在其执行过程中可以产生多个线程，与进程不同的是同类的多个线程共享<strong>堆</strong>和<strong>方法区</strong>资源，但每个线程有自己的<strong>程序计数器</strong>、<strong>虚拟机栈</strong>和<strong>本地方法栈</strong>，所以系统在产生一个线程，或在各个线程之间切换工作时，负担要比进程小的多。</p>
 <a id="more"></a>
 
-<p>xml配置这样写：</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"getAddrInfo"</span>  <span class="attr">resultMap</span>=<span class="string">"com.xxx.xxx.AddrInfo"</span>&gt;</span></span><br><span class="line">       SELECT * FROM addr__info </span><br><span class="line">　　　　where addr_id=#&#123;addrId&#125; and corp_id=#&#123;corpId&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-请简要描述线程与进程的关系-区别及优缺点？"><a href="#2-请简要描述线程与进程的关系-区别及优缺点？" class="headerlink" title="2. 请简要描述线程与进程的关系,区别及优缺点？"></a>2. 请简要描述线程与进程的关系,区别及优缺点？</h3><p><strong>从 JVM 角度说进程和线程之间的关系</strong></p>
+<h4 id="2-1-线程和进程的关系"><a href="#2-1-线程和进程的关系" class="headerlink" title="2.1. 线程和进程的关系"></a>2.1. 线程和进程的关系</h4><p>一个进程可以有多个线程，多个线程共享堆和方法区，每条线程有自己<strong>的程序计数器</strong>、<strong>虚拟机栈</strong>和<strong>本地方法栈</strong></p>
+<h4 id="2-2-程序计数器为什么是私有的"><a href="#2-2-程序计数器为什么是私有的" class="headerlink" title="2.2. 程序计数器为什么是私有的"></a>2.2. 程序计数器为什么是私有的</h4><p>程序计数器有下面两个作用：</p>
+<ol>
+<li>字节码解释器通过改变程序计数器来依次读取指令，从而实现代码的流程控制，如：顺序执行、异常处理、选择、循环</li>
+<li>在多线程的情况下，记录当前线程执行的位置，从而当线程切换回来的时候能知道该线程上次执行到哪</li>
+</ol>
+<h4 id="2-3-虚拟机栈和本地方法栈为什么是私有的"><a href="#2-3-虚拟机栈和本地方法栈为什么是私有的" class="headerlink" title="2.3. 虚拟机栈和本地方法栈为什么是私有的"></a>2.3. 虚拟机栈和本地方法栈为什么是私有的</h4><ul>
+<li>虚拟机栈：每个方法在执行的同时会创建一个栈帧用于存储局部变量表、操作数栈、常量池引用等信息。从方法调用到完成的过程对应一个栈帧在虚拟机栈中入栈出栈的过程</li>
+<li>本地方法栈：与虚拟机栈所发挥的作用非常类似，区别是：虚拟机栈为虚拟机执行Java方法服务，而本地方法栈则为虚拟机使用到的Native方法服务。在HotSpot虚拟机中和Java虚拟机栈合二为一</li>
+</ul>
+<h4 id="2-4-堆和方法区"><a href="#2-4-堆和方法区" class="headerlink" title="2.4. 堆和方法区"></a>2.4. 堆和方法区</h4><p>堆和方法区是所有线程共享的资源，其中堆是进程中最大的一块内存，主要用于存放新创建的对象（所有对象都在这里分配内存），方法区主要用于存放已被加载的类信息、常量、静态变量、即时编译器编译后的代码等数据</p>
+<h4 id="2-5-并发和并行的区别"><a href="#2-5-并发和并行的区别" class="headerlink" title="2.5. 并发和并行的区别"></a>2.5. 并发和并行的区别</h4><ul>
+<li>并发：同一时间段内，多个线程都在执行</li>
+<li>并行：单位时间内，多个线程同时执行</li>
+</ul>
+
       
     </div>
 
@@ -466,15 +478,6 @@
 
     <footer class="post-footer">
       
-        
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/MyBatis/" rel="tag"><i class="fa fa-tag"></i> MyBatis</a>
-          
-        </div>
-      
 
       
       
@@ -484,8 +487,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/20/Java集合/" rel="next" title="Java集合总结">
-                <i class="fa fa-chevron-left"></i> Java集合总结
+              <a href="/2019/08/02/B-树/" rel="next" title="B+树">
+                <i class="fa fa-chevron-left"></i> B+树
               </a>
             
           </div>
@@ -493,10 +496,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/28/计算机网络总结/" rel="prev" title="计算机网络总结">
-                计算机网络总结 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -671,7 +670,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#传入参数不只一个"><span class="nav-number">1.</span> <span class="nav-text">传入参数不只一个</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-进程和线程是什么"><span class="nav-number">1.</span> <span class="nav-text">1. 进程和线程是什么</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1-什么是进程"><span class="nav-number">1.1.</span> <span class="nav-text">1.1. 什么是进程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2-什么是线程"><span class="nav-number">1.2.</span> <span class="nav-text">1.2. 什么是线程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-请简要描述线程与进程的关系-区别及优缺点？"><span class="nav-number">2.</span> <span class="nav-text">2. 请简要描述线程与进程的关系,区别及优缺点？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-线程和进程的关系"><span class="nav-number">2.1.</span> <span class="nav-text">2.1. 线程和进程的关系</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-程序计数器为什么是私有的"><span class="nav-number">2.2.</span> <span class="nav-text">2.2. 程序计数器为什么是私有的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-虚拟机栈和本地方法栈为什么是私有的"><span class="nav-number">2.3.</span> <span class="nav-text">2.3. 虚拟机栈和本地方法栈为什么是私有的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4-堆和方法区"><span class="nav-number">2.4.</span> <span class="nav-text">2.4. 堆和方法区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5-并发和并行的区别"><span class="nav-number">2.5.</span> <span class="nav-text">2.5. 并发和并行的区别</span></a></li></ol></li></ol></div>
             
 
           </div>
