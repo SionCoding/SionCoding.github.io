@@ -1,4 +1,4 @@
-title: List.add方法注意点
+title: List.add 方法注意点
 author: Sion
 tags:
   - 算法
