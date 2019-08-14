@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/07/16/hello-world/</loc>
+    <loc>http://yoursite.com/2019/07/16/Hello-World/</loc>
     
-    <lastmod>2019-08-14T06:00:41.505Z</lastmod>
+    <lastmod>2019-08-14T06:13:21.670Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/08/14/Java-NIO-%E4%B9%8B-Channel/</loc>
+    
+    <lastmod>2019-08-14T06:11:00.533Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/2019/08/06/List-add%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2019-08-14T05:59:06.300Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/08/14/Java-NIO-%E4%B9%8B-Channel/</loc>
-    
-    <lastmod>2019-08-14T05:58:35.033Z</lastmod>
     
   </url>
   
@@ -93,14 +93,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
+    <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2019-07-27T08:43:35.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
+    <loc>http://yoursite.com/tags/index.html</loc>
     
     <lastmod>2019-07-27T08:43:35.000Z</lastmod>
     
