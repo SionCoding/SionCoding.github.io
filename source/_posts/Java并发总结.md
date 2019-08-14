@@ -1,7 +1,10 @@
 title: Java 并发总结
 author: Sion
-date: 2019-08-05 17:18:43
 tags:
+  - Java 并发
+categories:
+  - 技术
+date: 2019-08-05 17:18:00
 ---
 ### 1. 进程和线程是什么
 

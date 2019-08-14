@@ -1,7 +1,8 @@
 title: Java 集合总结
 author: Sion
 tags:
-  - JavaSE
+  - Java 集合
+  - Java 基础
 categories:
   - 技术
 date: 2019-07-20 14:42:00

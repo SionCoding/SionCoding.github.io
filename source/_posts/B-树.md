@@ -1,7 +1,8 @@
-title: B+树
+title: B+ 树与 MySQL
 author: Sion
 tags:
   - 数据结构
+  - MySQL
 categories:
   - 技术
 date: 2019-08-02 09:55:00

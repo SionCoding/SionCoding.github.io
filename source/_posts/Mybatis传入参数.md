@@ -2,7 +2,8 @@ title: MyBatis 传入参数
 author: Sion
 tags:
   - MyBatis
-categories: []
+categories:
+  - 技术
 date: 2019-07-27 14:41:00
 ---
 #### 传入参数不只一个
