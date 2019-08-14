@@ -95,15 +95,18 @@
 
 
 
-  <meta name="keywords" content="Java NIO,Java 基础">
+  <meta name="description" content="Channel（通道）介绍通常来说NIO中所有IO都是从通道开始的 从通道进行数据读取：创建一个缓冲区，然后请求通道读取数据 从通道进行数据写入：创建一个缓冲区，填充数据，然后请求通道写入数据。">
+<meta name="keywords" content="Java NIO,Java 基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java NIO 之 Channel">
 <meta property="og:url" content="http://yoursite.com/2019/08/14/Java-NIO-之-Channel/index.html">
 <meta property="og:site_name" content="Sion&#39;s Blog">
+<meta property="og:description" content="Channel（通道）介绍通常来说NIO中所有IO都是从通道开始的 从通道进行数据读取：创建一个缓冲区，然后请求通道读取数据 从通道进行数据写入：创建一个缓冲区，填充数据，然后请求通道写入数据。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-14T06:11:00.533Z">
+<meta property="og:updated_time" content="2019-08-14T07:16:38.737Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java NIO 之 Channel">
+<meta name="twitter:description" content="Channel（通道）介绍通常来说NIO中所有IO都是从通道开始的 从通道进行数据读取：创建一个缓冲区，然后请求通道读取数据 从通道进行数据写入：创建一个缓冲区，填充数据，然后请求通道写入数据。">
 
 
 
@@ -415,7 +418,7 @@
               
                 <span class="post-meta-item-text">Symbols count in article: </span>
               
-              <span title="Symbols count in article">0</span>
+              <span title="Symbols count in article">227</span>
             </span>
           
 
@@ -446,7 +449,17 @@
       
 
       
-        <a id="more"></a>
+        <h3 id="Channel（通道）介绍"><a href="#Channel（通道）介绍" class="headerlink" title="Channel（通道）介绍"></a>Channel（通道）介绍</h3><h4 id="通常来说NIO中所有IO都是从通道开始的"><a href="#通常来说NIO中所有IO都是从通道开始的" class="headerlink" title="通常来说NIO中所有IO都是从通道开始的"></a>通常来说NIO中所有IO都是从通道开始的</h4><ul>
+<li>从通道进行数据读取：创建一个缓冲区，然后请求通道读取数据</li>
+<li>从通道进行数据写入：创建一个缓冲区，填充数据，然后请求通道写入数据。</li>
+</ul>
+<a id="more"></a>
+
+<h4 id="Java-NIO-Channel通道和流非常相似，主要有以下几点区别："><a href="#Java-NIO-Channel通道和流非常相似，主要有以下几点区别：" class="headerlink" title="Java NIO Channel通道和流非常相似，主要有以下几点区别："></a>Java NIO Channel通道和流非常相似，主要有以下几点区别：</h4><ul>
+<li>通道可以读也可以写，流一般来说是单向的（只能读或者写，所以之前我们用流进行IO操作的时候需要分别创建一个输入流和一个输出流</li>
+<li>通道可以异步读写通道总是基于缓冲区Buffer来读写</li>
+</ul>
+
       
     </div>
 
@@ -543,8 +556,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -668,6 +690,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Channel（通道）介绍"><span class="nav-number">1.</span> <span class="nav-text">Channel（通道）介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#通常来说NIO中所有IO都是从通道开始的"><span class="nav-number">1.1.</span> <span class="nav-text">通常来说NIO中所有IO都是从通道开始的</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Java-NIO-Channel通道和流非常相似，主要有以下几点区别："><span class="nav-number">1.2.</span> <span class="nav-text">Java NIO Channel通道和流非常相似，主要有以下几点区别：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
