@@ -14,3 +14,12 @@ date: 2019-08-26 08:33:00
 使用Selector的好处：可以使用更少的线程来处理通道了，避免了线程的上下文切换引起的开销
 
 <!-- more -->
+
+### Selector的实用方法介绍
+
+1. Selector的创建：通过Selector.open()方法创建一个Selector对象，如下：
+```java
+Selector selector = Selector.open();
+```
+
+2. 注册Channel到Selector
