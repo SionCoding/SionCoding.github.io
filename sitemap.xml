@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/09/05/%E5%92%8C/</loc>
+    
+    <lastmod>2019-09-05T01:02:06.353Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/08/26/Java-NIO-%E4%B9%8B-Selector/</loc>
     
-    <lastmod>2019-08-26T00:42:40.250Z</lastmod>
+    <lastmod>2019-08-26T00:50:01.977Z</lastmod>
     
   </url>
   
